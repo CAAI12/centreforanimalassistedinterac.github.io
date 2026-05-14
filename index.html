@@ -55,8 +55,30 @@
     body {
       font-family: 'HK Grotesk', sans-serif!important;
     }
-  </style>
 
+    /*added in on 15-05-2026 Force the header to be visible immediately */
+  #header {
+    background: #ffffff !important; /* Set your desired background color */
+    height: 80px !important;       /* Ensure it has its full height immediately */
+    position: fixed !important;    /* Keep it at the top */
+    top: 0 !important;
+    transition: none !important;   /* Disable the "pop-in" animation */
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1) !important; /* Add a slight shadow so it doesn't blend into the white paper */
+  }
+
+  /* Force the navigation links to be visible immediately */
+  #navbar ul li a {
+    color: #924230 !important;     /* Your brand brown */
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  /* Make sure the main content starts below the header so it's not covered */
+  main {
+    margin-top: 80px !important;
+  }
+</style>
+  
 </head>
 
 <body>
